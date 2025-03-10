@@ -22,4 +22,12 @@ public class Car extends Vehicle {
 
     // Methodology.
     
+    public String toString() {
+        return ("Car[numWheels: " + getNumWheels() + ", avgSpeed: " + getAvgSpeed() + ", color: " + getColor() + ", numSeats: " + this.numSeats + ", brand: " + this.brand + "]");
+    }
+
+    public void makeNoise() {
+        super.makeNoise();
+        System.out.println("Beep,. Beep. Beep. Beep. Beep. Beep. Beep.");
+    }
 }

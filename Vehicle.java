@@ -25,4 +25,24 @@ public class Vehicle {
 
     // 3. functions
 
+    // toString method gets called when you pass object in print statement automatically
+    public String toString() {
+        return ("Vehicle[numWheels: " + this.numWheels + ", avgSpeed: " + this.avgSpeed + ", color: " + this.color + "]");
+    }
+
+    public int getNumWheels() {
+        return numWheels;
+    }
+
+    public double getAvgSpeed() {
+        return avgSpeed;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void makeNoise() {
+        System.out.println("vroom vrooom");
+    }
 }
